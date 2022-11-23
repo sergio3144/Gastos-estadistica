@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+}
+
+.header {
+    display: flex;
+    max-width: 500px;
+    background-color: hsl(10, 79%, 65%);
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: space-between;
+    .header__saldo {
+        .header__title {
+            color: hsl(27, 66%, 92%);
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+        .header__price {
+            color: hsl(27, 66%, 92%);
+            font-size: 30px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+    }
+    .header__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        .header__logo {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .header__logo--modifier {
+            background-color: hsl(25, 47%, 15%);
+            border: none;
+            position: relative;
+            right: -30px;
+        }
+    }
+}
+
+.main {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 20px;
+    padding: 30px;
+    .main__title {
+        color: hsl(25, 47%, 15%);
+        font-weight: bold;
+        margin: 20px 0 60px 0;
+    }
+    .main__leven {
+        display: flex;
+        justify-content: space-between;
+        .main__item {
+            .main__itemLeven {
+                width: 50px;
+                background-color: hsl(10, 79%, 65%);
+                height: 150px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: .6s;
+                padding-top: 10px;
+            }
+            // MODIFICADORES
+            .main__itemLeven--lun {
+                height: 50px;
+                margin-top: 200%;
+            }
+            .main__itemLeven--mar {
+                background-color: hsl(186, 34%, 60%);
+                height: 100px;
+                margin-top: 101%;
+            }
+            .main__itemLeven--jue {
+                height: 80px;
+                margin-top: 140%;
+            }
+            .main__itemLeven--vie {
+                height: 70px;
+                margin-top: 160%;
+            }
+            .main__itemLeven--sab {
+                height: 120px;
+                margin-top: 60%;
+            }
+            .main__itemLeven--dom {
+                height: 80px;
+                margin-top: 140%;
+            }
+            .main__fecha {
+                text-align: center;
+                font-weight: bold;
+                color: black;
+                margin-top: 5px;
+            }
+
+            .main__itemLeven:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .main__mes {
+        display: flex;
+        justify-content: space-between;
+        .main__totalMes {
+            .main__titleTotal {
+                font-size: 16px;
+                margin-bottom: 6px;
+                opacity: .8;
+            }
+            .main__priceTotal {
+                color: hsl(25, 47%, 15%);
+                font-size: 50px;
+                font-weight: 900;
+            }
+        }
+        .main__porcentaje {
+            align-items: center;
+            text-align: end;
+            margin-top: 15px;
+            .main__number {
+                font-size: 18px;
+                color: hsl(25, 47%, 15%);
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .main__information {
+                font-size: 18px;
+                font-weight: bold;
+                opacity: .7;
+            }
+        }
+    }
+}
+
+.main__active {
+    color: white;
+    text-align: center;
+    font-size: 16px;  
+    height: 100%; 
+}
+@media(max-width: 680px) {
+    body {
+        padding: 20px;
+    }
+    .main {
+        .main__title {
+            text-align: center;
+        }
+        .main__levens {
+            .main__leven {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                max-width: 300px;
+                margin: 0 auto;
+                .main__item {
+                    margin-left: 5px;
+                }
+            }
+        }
+        .main__mes {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}

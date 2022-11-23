@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gastos</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__saldo">
+            <h1 class="header__title">Mi saldo</h1>
+            <h1 class="header__price">$921.48</h1>
+        </div>
+        <div class="header__logo">
+            <div class="header__logo header__logo--modifier"></div>
+            <div class="header__logo"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1 class="main__title">Gastos - Últimos 7 días</h1>
+        <div class="main__levens">
+            <div class="main__leven">
+                <div class="main__item">
+                    <div class="main__itemLeven main__itemLeven--lun"></div>  
+                    <p class="main__fecha">Lun</p>       
+                </div>
+                <div class="main__item">
+                    <div class="main__itemLeven main__itemLeven--mar"></div>  
+                    <p class="main__fecha">Mar</p>       
+                </div>
+                <div class="main__item">
+                    <div class="main__itemLeven"></div>  
+                    <p class="main__fecha">Mie</p>       
+                </div>
+                <div class="main__item">
+                    <div class="main__itemLeven main__itemLeven--jue"></div>  
+                    <p class="main__fecha">Jue</p>       
+                </div>
+                <div class="main__item">
+                    <div class="main__itemLeven main__itemLeven--vie"></div>  
+                    <p class="main__fecha">Vie</p>       
+                </div>
+                <div class="main__item">
+                    <div class="main__itemLeven main__itemLeven--sab"></div>  
+                    <p class="main__fecha">Sáb</p>       
+                </div>
+                <div class="main__item">
+                    <div class="main__itemLeven main__itemLeven--dom"></div>  
+                    <p class="main__fecha">Dom</p>       
+                </div>
+            </div>
+        </div>
+
+        <hr style="margin: 25px 0 25px 0; opacity: .5">
+
+        <div class="main__mes">
+            <div class="main__totalMes">
+                <h1 class="main__titleTotal">Total este mes</h1>
+                <h1 class="main__priceTotal">$478.33</h1>
+            </div>
+            <div class="main__porcentaje">
+                <h1 class="main__number">+2.4%</h1>
+                <p class="main__information">Desde el mes pasado</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
