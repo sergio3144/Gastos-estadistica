@@ -8,8 +8,8 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a decent understanding of HTML, CSS and JavaScript.**
 
-## Link the proyect
-❤️‍🔥https://sergio3144.github.io/Gastos-estadistica/❤️‍🔥
+## Link the proyect ❤️‍🔥
+https://sergio3144.github.io/Gastos-estadistica/
 
 ## The challenge
 
